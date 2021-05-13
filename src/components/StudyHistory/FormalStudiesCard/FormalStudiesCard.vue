@@ -61,7 +61,7 @@ export default {
   -webkit-overflow-scrolling: touch;
   display: block;
   overflow-y: auto;
-  height: 67%;
+  height: 60%;
 
   padding-right: 5%;
   margin-right: -5%;
