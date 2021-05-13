@@ -119,8 +119,8 @@ export default {
 }
 
 .header_borders{
-  border-top-left-radius: 18px;
-  border-bottom-right-radius: 18px;
+  border-top-left-radius: 18px !important;
+  border-bottom-right-radius: 18px !important;
   background-color: #916f07;
 }
 
