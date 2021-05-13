@@ -16,7 +16,8 @@
 
 <script>
 import {
-  BCard, BCardFooter,
+  BCard,
+  BCardFooter,
   BCardText,
   BCardTitle
 } from 'bootstrap-vue';
