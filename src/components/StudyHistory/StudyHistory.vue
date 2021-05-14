@@ -1,5 +1,5 @@
 <template>
-  <b-card class="mb-5 round_borders" bg-variant="primary">
+  <b-card class="mb-5 round_borders" bg-variant="secondary">
     <b-card-title>{{ selectedTitle[0].mainTitle }}</b-card-title>
     <FormalStudiesCard :selectedTitle="selectedTitle[0]" :formalStudies="formalStudies"/>
 
@@ -142,8 +142,8 @@ export default {
           year: 2020,
           institution: 'Austral University',
           courseTitle: 'Server Side Development: NodeJS, Express, MongoDB',
-          lugar: 'Online',
-          pais: null,
+          city: 'Online',
+          country: null,
           status: 'Finished',
           image: 'coursera.jpeg',
           certificateUrl: ''
@@ -152,8 +152,8 @@ export default {
           year: 2020,
           institution: 'Google Cloud',
           courseTitle: 'Google Cloud Platform Fundamentals: Core Infrastructure',
-          lugar: 'Online',
-          pais: null,
+          city: 'Online',
+          country: null,
           status: 'Finished',
           image: 'coursera.jpeg',
           certificateUrl: ''
@@ -162,8 +162,8 @@ export default {
           year: 2020,
           institution: 'Google Cloud',
           courseTitle: 'Architecting with Google Kubernetes Engine: Workloads',
-          lugar: 'Online',
-          pais: null,
+          city: 'Online',
+          country: null,
           status: 'Finished',
           image: 'coursera.jpeg',
           certificateUrl: ''
@@ -172,8 +172,8 @@ export default {
           year: 2020,
           institution: 'Yonsei University',
           courseTitle: 'Introduction to TCP/IP',
-          lugar: 'Online',
-          pais: null,
+          city: 'Online',
+          country: null,
           status: 'Finished',
           image: 'coursera.jpeg',
           certificateUrl: ''
@@ -183,7 +183,7 @@ export default {
           institution: 'deeplearning.ai',
           courseTitle: 'Introduction to TensorFlow for Airtificial Intelligence, Machine Learning and Deep Learning',
           lugar: 'Online',
-          pais: null,
+          country: null,
           status: 'Finished',
           image: 'coursera.jpeg',
           certificateUrl: ''
@@ -193,7 +193,7 @@ export default {
           institution: 'University of California: San Diego',
           courseTitle: 'Algorithmic Toolbox',
           lugar: 'Online',
-          pais: null,
+          country: null,
           status: 'Finished',
           image: 'coursera.jpeg',
           certificateUrl: ''
@@ -203,7 +203,7 @@ export default {
           institution: 'Kennsaw State University',
           courseTitle: 'Cybersecurity and its ten domains',
           lugar: 'Online',
-          pais: null,
+          country: null,
           status: 'Finished',
           image: 'coursera.jpeg',
           certificateUrl: ''

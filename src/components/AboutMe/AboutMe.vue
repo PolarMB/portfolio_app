@@ -1,15 +1,19 @@
 <template>
   <div id="info">
-    <b-card class="mb-5 round_borders" bg-variant="primary">
+    <b-card class="mb-5 round_borders" bg-variant="secondary">
       <BCardTitle>{{ selectedTitle[0].mainTitle }}</BCardTitle>
       <div v-for="(paragraph, key) in orderedParapgraphs" :key="key+'paragraph'">
         <BCardText v-html="paragraph.content" class="mb-3">
         </BCardText>
       </div>
       <BCardTitle>{{selectedTitle[0].languageTitle}}</BCardTitle>
-      <BCardFooter v-for="(language, index) in languages" :key="index">
-        <BCardText>{{language.name}} ({{language.level}})</BCardText>
-      </BCardFooter>
+      <b-row>
+        <b-col cols="12" md="3" v-for="(language, index) in languages" :key="index">
+          <BCardFooter class="bg-primary" v-bind:class="[(index%2 === 0) ? 'rounded_borders_a': 'rounded_borders_b']">
+            <BCardText>{{language.name}} ({{language.level}})</BCardText>
+          </BCardFooter>
+        </b-col>
+      </b-row>
     </b-card>
   </div>
 </template>
@@ -19,7 +23,9 @@ import {
   BCard,
   BCardFooter,
   BCardText,
-  BCardTitle
+  BCardTitle,
+  BCol,
+  BRow
 } from 'bootstrap-vue';
 
 export default {
@@ -30,7 +36,9 @@ export default {
     BCard,
     BCardFooter,
     BCardText,
-    BCardTitle
+    BCardTitle,
+    BCol,
+    BRow
   },
   data() {
     return {
@@ -38,12 +46,12 @@ export default {
         {
           language: 'en',
           mainTitle: 'Personal Information',
-          languageTitle: 'Languages'
+          languageTitle: 'Spoken Languages'
         },
         {
           language: 'es',
           mainTitle: 'Información Personal',
-          languageTitle: 'Idiomas'
+          languageTitle: 'Idiomas Hablados'
         }
       ],
       languages: [
@@ -107,5 +115,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.rounded_borders_a{
+  border-top-left-radius: 18px !important;
+  border-bottom-right-radius: 18px !important;
+}
 
+.rounded_borders_b{
+  border-bottom-left-radius: 18px !important;
+  border-top-right-radius: 18px !important;
+}
 </style>

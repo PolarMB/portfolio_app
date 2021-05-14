@@ -12,9 +12,9 @@
         <b-col cols="12" md="5" class="mt-3 text-center">
           <BCard
             style="max-width: 30rem;"
-            class="mb-2 mt-4 ml-md-n5 round_borders"
+            class="mb-2 mt-4 ml-md-n5 round_borders bg-secondary"
           >
-            <b-card-header class="mt-n2 header_borders">
+            <b-card-header class="mt-n2 header_borders bg-primary">
               <h5 class="mb-0 text-left">{{ selectedDisplay[0].cardTitle }}</h5>
             </b-card-header>
             <BCardText class="mt-2">
@@ -31,7 +31,7 @@
             </BCardText>
             <b-row>
               <b-col cols="12" md=6>
-                <BButton class="button_width" :href="cvData.github" target="_blank" variant="primary">
+                <BButton class="button_width" :href="cvData.github" target="_blank" variant="black">
                   <font-awesome-icon class="mt-n1" :icon="['fab', 'github']" />
                   Github
                 </BButton>
@@ -118,10 +118,13 @@ export default {
   width: 10rem;
 }
 
+.button_width:hover{
+  background-color: $terciary;
+}
+
 .header_borders{
   border-top-left-radius: 18px !important;
   border-bottom-right-radius: 18px !important;
-  background-color: #916f07;
 }
 
 .line{

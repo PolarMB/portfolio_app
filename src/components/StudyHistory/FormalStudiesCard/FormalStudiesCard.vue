@@ -2,9 +2,9 @@
       <b-row>
       <b-card v-for="(study, index) in formalStudies" :key="index"
         style="max-width: 15rem; max-height: 30rem;"
-        class="mb-4 mx-4 ml-5"
+        class="mb-4 mx-4 ml-5 bg-terciary round_borders"
         >
-        <b-card-img style="width: 100%; height: 40%;" class="mt-n3 mb-1"
+        <b-card-img style="width: 100%; height: 40%;" class="mt-n3 mb-1 round_top_borders"
           :src="require(`../../../assets/img/studies/${study.image}`)"
           alt="Image" top>
         </b-card-img>
@@ -57,6 +57,15 @@ export default {
   font-size: 14px;
 }
 
+.round_borders{
+  border-radius: 18px;
+}
+
+.round_top_borders{
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+
 .scrolling_wrapper_flexbox {
   -webkit-overflow-scrolling: touch;
   display: block;
@@ -82,4 +91,5 @@ export default {
     background-image: -webkit-linear-gradient(90deg,transparent,#232d36 50%,transparent,transparent)
   }
 }
+
 </style>

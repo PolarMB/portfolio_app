@@ -1,23 +1,19 @@
+$body-bg: #91A2AF;
+$body-color: #FFFFFF;
+$black: #000000;
+$terciary: #353e45;
+$radius: 25px;
+
 $theme-colors: (
-  "primary": #916f07,
+  "primary": #47314D,
+  "secondary": #625088,
+  "terciary": $terciary,
+  "black": $black
 );
 
-$body-bg: #e2d86f;
-$radius: 25px;
 
 // Bootstrap and its default variables
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 // BootstrapVue and its default variables
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
 
-body {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: left;
-    width: 100%;
-}
-
-.round_borders{
-  border-radius: $radius;
-}

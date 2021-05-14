@@ -17,16 +17,19 @@ export default {
 </script>
 
 <style lang="scss">
-// #nav {
-//   padding: 30px;
+@import './assets/styles/global_variables.scss';
 
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
+  // Import Bootstrap and BootstrapVue source SCSS files
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
 
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif, Avenir, Helvetica, Arial,;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  width: 100%;
+}
 </style>
