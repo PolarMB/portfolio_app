@@ -1,15 +1,15 @@
 <template>
     <b-row>
-        <b-col cols="12" md="4" v-for="(course, index) in courseList" :key="index">
+        <b-col cols="12" md="6" lg="4" v-for="(course, index) in courseList" :key="index">
           <b-card
-            style="width: 15rem; height: 23.3rem;"
+            style="width: 15rem; height: 25.3rem;"
             class="mb-4 mx-4 ml-4 bg-terciary round_borders"
           >
             <b-card-img style="width: 100%; height: 35%;" class="mt-n2 mb-1 round_top_borders"
               :src="require(`../../../assets/img/studies/${course.image}`)"
               alt="Image" top>
             </b-card-img>
-            <b-card-title>{{ course.institution }}</b-card-title>
+            <b-card-title><b>{{ course.institution }}</b></b-card-title>
             <b-card-text class="card_content_fonts">
               <b>{{selectedTitle.informalCourseTitle}}</b> {{course.courseTitle}}
             </b-card-text>
@@ -23,7 +23,7 @@
               <b>Status: </b>{{course.status}}
             </b-card-text>
           </b-card>
-            <b-row v-if="course.certificateUrl !== null" style="position: absolute; margin-left: 16%; margin-top: -21%;">
+            <b-row v-if="course.certificateUrl !== null" style="position: absolute; margin-left: 3.2rem; margin-top: -4.5rem;">
               <b-col cols="12">
                 <b-button :href="course.certificateUrl" class="bg-secondary" target="_blank">{{selectedTitle.certificateButtonText}}</b-button>
               </b-col>

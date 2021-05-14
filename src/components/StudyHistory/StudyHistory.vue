@@ -220,6 +220,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.round_borders{
+  border-radius: 18px !important;
+}
 
 .scrolling_wrapper_flexbox {
     -webkit-overflow-scrolling: touch;

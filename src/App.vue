@@ -32,4 +32,8 @@ body {
   text-align: left;
   width: 100%;
 }
+
+%round-border{
+  border-radius: 18px;
+}
 </style>

@@ -115,6 +115,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.round_borders{
+  border-radius: 18px !important;
+}
+
 .rounded_borders_a{
   border-top-left-radius: 18px !important;
   border-bottom-right-radius: 18px !important;

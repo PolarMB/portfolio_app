@@ -1,15 +1,15 @@
 <template>
-      <b-row>
+    <b-row>
       <b-card v-for="(study, index) in formalStudies" :key="index"
         style="max-width: 15rem; max-height: 30rem;"
-        class="mb-4 mx-4 ml-5 bg-terciary round_borders"
+        class="mb-4 mx-2 mx-lg-4 ml-5 ml-lg-5 bg-terciary round_borders"
         >
         <b-card-img style="width: 100%; height: 40%;" class="mt-n3 mb-1 round_top_borders"
           :src="require(`../../../assets/img/studies/${study.image}`)"
           alt="Image" top>
         </b-card-img>
         <div class="scrolling_wrapper_flexbox">
-          <b-card-title>{{ study.institution }}</b-card-title>
+          <b-card-title><b>{{ study.institution }}</b></b-card-title>
           <b-card-text class="card_content_fonts">
             <b>{{selectedTitle.formalCourseTitle}}</b> {{study.courseTitle}}
           </b-card-text>

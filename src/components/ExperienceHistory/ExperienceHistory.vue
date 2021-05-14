@@ -2,12 +2,12 @@
   <b-card class="mb-5 round_borders" bg-variant="secondary">
     <b-card-title>{{ selectedTitle[0].mainTitle }}</b-card-title>
       <b-row>
-        <b-col cols="12" md="4" v-for="(job, index) in jobList" :key="index">
+        <b-col cols="12" md="6" lg="4" v-for="(job, index) in jobList" :key="index">
           <b-card
             style="width: 15rem; height: 23.3rem;"
             class="mb-4 mx-4 ml-4 bg-terciary round_borders"
           >
-            <b-card-title>{{ job.company }}</b-card-title>
+            <b-card-title><b>{{ job.company }}</b></b-card-title>
             <b-card-img style="width: 100%; height: 35%; background-color: #DCDCDC;" class="round_borders p-1 mt-n2 mb-1"
               :src="require(`../../assets/img/jobs/${job.image}`)"
               alt="Image" top>
@@ -144,7 +144,7 @@ export default {
 }
 
 .round_borders{
-  border-radius: 18px;
+  border-radius: 18px !important;
 }
 
 </style>

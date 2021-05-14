@@ -2,13 +2,13 @@
   <!-- eslint-disable max-len -->
   <div>
     <BContainer>
-      <BRow>
+      <BRow aligh-h="center">
         <BCol cols="12" md="6" class="mt-3">
-          <BImg v-bind="imgageProps"
+          <BImg v-bind="imgageProps" class="ml-2 ml-md-0 " style="border: 2px solid black;"
             rounded
             :src="require('../../assets/img/fotoPerfilCV.png')"></BImg>
         </BCol>
-        <div class="line d-none d-md-block"></div>
+        <div class="line d-none d-lg-block"></div>
         <b-col cols="12" md="5" class="mt-3 text-center">
           <BCard
             style="max-width: 30rem;"
@@ -30,13 +30,13 @@
                 <b>{{selectedDisplay[0].ageTitleText+': '}}</b>{{cvData.age}}
             </BCardText>
             <b-row>
-              <b-col cols="12" md=6>
+              <b-col cols="12" lg=6>
                 <BButton class="button_width" :href="cvData.github" target="_blank" variant="black">
                   <font-awesome-icon class="mt-n1" :icon="['fab', 'github']" />
                   Github
                 </BButton>
               </b-col>
-              <b-col cols="12" md=6>
+              <b-col cols="12" lg=6>
                 <BButton class="button_width" :href="cvData.linkedin" target="_blank" variant="primary">
                   <font-awesome-icon class="mt-n1" :icon="['fab', 'linkedin']" />
                   LinkedIn
@@ -133,5 +133,9 @@ export default {
   height: 340px;
   border-left: 1px solid black;
   position: absolute;
+}
+
+.round_borders{
+  border-radius: 18px;
 }
 </style>
